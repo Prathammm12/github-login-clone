@@ -1,0 +1,159 @@
+.background {
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(8, 13, 84);
+    background-image: url("Images/Background.png");
+    background-size: cover;
+    background-position: center;
+    margin-top : 10px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.navbar ul {
+    display: flex;        
+    list-style: none;
+    gap: 20px;
+    padding: 10px;
+}
+
+.navbar li {
+    font-size: 21px;
+    color: rgb(232, 225, 225);
+}
+
+.search_container
+{
+  background: transparent; 
+  margin-left: 500px;
+  outline: none; 
+  color: transparent;         
+}
+
+.search_bar{
+    background-color: rgb(9, 15, 74);
+    border: 1px solid rgb(70, 69, 80);
+    width: 300px;
+    height: 30px;
+    padding: 3px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(239, 233, 233);
+}
+
+.login_button{
+    background-color: transparent;   
+    color: rgb(255, 255, 255); 
+    border: none;
+    font-size: 20px;
+}
+
+.login_button:hover{
+    color: rgb(232, 221, 221);
+    cursor: pointer;
+}
+
+.signup_button{
+    background-color: transparent;   
+    color: rgb(255, 255, 255); 
+    border: 1px solid rgb(126, 121, 121);
+    font-size: 20px;
+}
+
+.head_line{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 80px;
+    font-size: 55px;
+
+}
+
+.head_line2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 55px;
+    margin-top: 20px;
+}
+
+.discription{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.discription2{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-top: 3px;
+}
+
+.email_input{
+    background-color: white;
+    border: 1px solid rgb(255, 254, 254);
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 400px;
+    padding-left: 20px;
+}
+.sign_up_for_github{
+    background-color: green;   
+    color: rgb(255, 255, 255); 
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+.email_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+/* Input + button together */
+.input_group {
+  display: flex;
+  padding: 10px;
+}
+
+.input_group input {
+  padding: 10px;
+  width: 400px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.get_started {
+  background: green;
+  color: white;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+
+.copilot_btn {
+  background: rgb(17, 17, 78);
+  color: white;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+}
