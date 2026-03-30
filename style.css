@@ -1,35 +1,43 @@
 .background {
     margin: 0;
-    overflow: hidden;
+    padding: 0;
     background-color: rgb(8, 13, 84);
     background-image: url("Images/Background.png");
     background-size: cover;
     background-position: center;
-    margin-top : 10px;
+    overflow-x: hidden;
+    border: 5px solid red(70, 69, 80);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
-    margin-top: 50px;
+.logo img {
+    width: 70px;
+    height: 50px;
+    margin-top: 0px;
+   
 }
 
 .navbar ul {
     display: flex;        
     list-style: none;
-    gap: 20px;
-    padding: 10px;
+    gap: 10px;
+    padding-inline-start: 0px;
+   
 }
 
 .navbar li {
     font-size: 21px;
     color: rgb(232, 225, 225);
+    margin-left: 7px;
+
 }
 
 .search_container
 {
   background: transparent; 
-  margin-left: 500px;
+  margin-left: 250px;
   outline: none; 
   color: transparent;         
 }
@@ -40,6 +48,7 @@
     width: 300px;
     height: 30px;
     padding: 3px;
+    margin-top: 6px;
 }
 
 .navbar a {
@@ -51,7 +60,10 @@
     background-color: transparent;   
     color: rgb(255, 255, 255); 
     border: none;
-    font-size: 20px;
+    font-size: 19px;
+    width: 100px;
+    margin-top: 9px;
+
 }
 
 .login_button:hover{
@@ -63,55 +75,29 @@
     background-color: transparent;   
     color: rgb(255, 255, 255); 
     border: 1px solid rgb(126, 121, 121);
-    font-size: 20px;
+    font-size: 17px;
+    margin-right: 10px;
+    width: 100px;
+    height: 35px;
+    margin-top: 6px;
 }
 
 .head_line{
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-top: 80px;
-    font-size: 55px;
-
+    font-size: 40px;
+    margin-top: 100px;
 }
 
-.head_line2{
+
+.discription {
     color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-top: 20px;
     text-align: center;
-    font-size: 55px;
-    margin-top: 20px;
 }
 
-.discription{
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    margin-top: 20px;
-}
 
-.discription2{
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    margin-top: 3px;
-}
-
-.email_input{
-    background-color: white;
-    border: 1px solid rgb(255, 254, 254);
-    width: 400px;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 5px;
-    margin-left: 400px;
-    padding-left: 20px;
-}
-.sign_up_for_github{
-    background-color: green;   
-    color: rgb(255, 255, 255); 
-    font-size: 20px;
-    width: 150px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 400px;
-}
 
 .email_section {
   display: flex;
@@ -122,7 +108,6 @@
   padding: 30px;
 }
 
-/* Input + button together */
 .input_group {
   display: flex;
   padding: 10px;
@@ -130,30 +115,88 @@
 
 .input_group input {
   padding: 10px;
-  width: 400px;
-  height: 30px;
+  width: 300px;
+  border-radius: 5px 0 0 5px;
   border: none;
   outline: none;
-  border-radius: 5px 0 0 5px;
 }
 
-.get_started {
+.sign_up_for_github {
   background: green;
   color: white;
-  border: 3px solid rgb(255, 255, 255);
-  padding: 10px 15px;
+  border: 3px solid white;
+  padding: 10px;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 
-
 .copilot_btn {
-  background: rgb(17, 17, 78);
+  background:  rgb(43, 42, 83);
+  border: 3px solid white;
   color: white;
-  border: 3px solid rgb(255, 255, 255);
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  height: 50px;
-  width: 200px;
 }
+
+.footer{
+    background-color:  rgba(44, 45, 87, 0.6);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    height: 30%;
+    display: flex;
+}
+
+.logo_footer img {
+    width: 60px;
+    height: 40px;
+    margin-top: 2px;
+}
+.logo_footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0px;
+    width: 60px;
+    height: 40px;
+}
+.logo_footer_text {
+    color: white;
+    font-size: 24px;
+}
+
+.subscribe_btn {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: white 1px solid;
+    margin-left: 10px;
+}
+
+.footer_div_one{
+    display: flex;
+    margin-left: 100px;
+}
+
+ .footer_nav_one li {
+     color: rgb(205, 194, 194);
+     list-style: none;
+     text-decoration: none;
+     font-size: 15px;
+     padding: 3px;
+ }
+
+ .space li::marker{
+    color: rgba(42, 35, 74, 0.289);
+ }
+
+ 
+
+
