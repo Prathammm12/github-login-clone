@@ -1,129 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Login</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GitHub Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body class="background">
- 
-       <nav class="navbar">
-         <ul>
-         <div class="logo">
-            <img src="Images/GitHub-logo.png" alt="GitHub Logo">
-         </div>
-            <li><a href="">Platform&#9660; </a></li>
-            <li><a href="">Sources&#9660;</a></li>
-            <li><a href="">OpenSource&#9660;</a></li>
-            <li><a href="">Enterprise&#9660;</a></li>
-            <li><a href="">Pricing&#9660;</a></li>
-            <li></li>
-            <li>
-              <div class="search_container">
-               <input class="search_bar" type="text" placeholder="Search...">
-              </div>
-            </li>
-            <li>
-              <button class="login_button">Sign in</button>
-            </li>
-            <li>
-              <button class="signup_button">Sign up</button>
-            </li>
-         </ul>
-       </nav>
-       <section class="scroll">
-           <div class="head_line">
-              <p style="margin:0">The future of building</p>
-              <p style="margin:0"> happens together</p>
-           </div>
-           <div class="discription">
-            <p> Tool and threads evolve, but collaboration With GitHUb,</p>
-             <p > developers, agents and code came together on one platform.</p>
-           </div>
-           
-          <div class="email_section">
-        <div class="input_group">
-          <input type="email" placeholder="Email address">
-          <button class="sign_up_for_github">Sign up for GitHub</button>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="nav-inner">
+        <div class="logo">
+          <img src="Images/GitHub-logo.png" alt="GitHub Logo" />
         </div>
-         <button class="copilot_btn">Try GitHub Copilot free</button>
-       </section>
-      <nav class="space">
-            <ul>
-              <li></li>
-              <li></li>
-               <li></li>
-              <li></li>
-               <li></li>
-              <li></li>
-               <li></li>
-              <li></li>
-               <li></li>
-              <li></li>
+
+        <ul class="nav-list">
+          <li class="dropdown">
+            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Platform ▾</button>
+            <ul class="dropdown_content" role="menu" aria-hidden="true">
+              <li role="none"><a role="menuitem" href="#">GitHub Copilot</a></li>
+              <li role="none"><a role="menuitem" href="#">GitHub Spark</a></li>
+              <li role="none"><a role="menuitem" href="#">GitHub Model</a></li>
+              <li role="none"><a role="menuitem" href="#">Actions</a></li>
             </ul>
-      </nav>
-    <footer class="footer">
-      <section> 
-         <div class="logo_footer">
-           <img src="Images/GitHub-logo.png" alt="GitHub Logo">
-           <h3 class="logo_footer_text">GitHub</h3>
-         </div>
-         <h3 style="margin-bottom: 2px; margin-left: 10px;">Subscribe to our developer newsletter</h3>
-         <p style="margin-top:0;margin-left: 10px; color: gray;">Get tips, technical guides, and best practices. Twice a month.</p>
-         <button class="subscribe_btn">Subscribe</button>
-      </section>
-      <div class="footer_div_one">       
-         <nav class="footer_nav_one">
-         <li>Platform</li>
-         <li>Features</li>
-         <li>Enterprise</li>
-         <li>Copilot</li>
-         <li>AI</li>
-         <li>Security</li>
-         <li>Pricing</li>
-         <li>Team</li>
-         </nav>
+          </li>
+
+          <li class="dropdown">
+            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Sources ▾</button>
+            <ul class="dropdown_content" role="menu" aria-hidden="true">
+              <li role="none"><a role="menuitem" href="#">Docs</a></li>
+              <li role="none"><a role="menuitem" href="#">Guides</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Open Source ▾</button>
+            <ul class="dropdown_content" role="menu" aria-hidden="true">
+              <li role="none"><a role="menuitem" href="#">Explore</a></li>
+              <li role="none"><a role="menuitem" href="#">Community</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">Enterprise ▾</button>
+            <ul class="dropdown_content" role="menu" aria-hidden="true">
+              <li role="none"><a role="menuitem" href="#">Solutions</a></li>
+              <li role="none"><a role="menuitem" href="#">Pricing</a></li>
+            </ul>
+          </li>
+
+          <li class="search_container">
+            <input class="search_bar" type="text" placeholder="Search..." aria-label="Search" />
+          </li>
+
+          <li><button class="login_button" type="button">Sign in</button></li>
+          <li><button class="signup_button" type="button">Sign up</button></li>
+        </ul>
       </div>
-      <div class="footer_div_one">
-      <nav  class="footer_nav_one">
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero scroll">
+      <div class="head_line">
+        <p>The future of building</p>
+        <p>happens together</p>
+      </div>
+
+      <div class="description">
+        <p>Tools and threads evolve, but collaboration with GitHub</p>
+        <p>brings developers, agents, and code together on one platform.</p>
+      </div>
+
+      <div class="email_section">
+        <div class="input_group">
+          <input type="email" placeholder="Email address" aria-label="Email address" />
+          <button class="sign_up_for_github" type="button">Sign up for GitHub</button>
+        </div>
+        <button class="copilot_btn" type="button">Try GitHub Copilot free</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-left">
+      <div class="logo_footer">
+        <img src="Images/GitHub-logo.png" alt="GitHub Logo" />
+        <h3 class="logo_footer_text">GitHub</h3>
+      </div>
+
+      <h3 class="newsletter_title">Subscribe to our developer newsletter</h3>
+      <p class="newsletter_desc">Get tips, technical guides, and best practices. Twice a month.</p>
+      <button class="subscribe_btn" type="button">Subscribe</button>
+    </div>
+
+    <div class="footer-links">
+      <nav class="footer_div_one" aria-label="Platform links">
+        <ul class="footer_nav_one">
+          <li>Platform</li>
+          <li>Features</li>
+          <li>Enterprise</li>
+          <li>Copilot</li>
+          <li>AI</li>
+          <li>Security</li>
+          <li>Pricing</li>
+          <li>Team</li>
+        </ul>
+      </nav>
+
+      <nav class="footer_div_two" aria-label="Ecosystem links">
+        <ul class="footer_nav_two">
           <li>Ecosystem</li>
           <li>Developer API</li>
           <li>Partners</li>
-          <li>Education </li>
-          <li>GitHub CLI </li>
+          <li>Education</li>
+          <li>GitHub CLI</li>
           <li>GitHub Desktop</li>
-          <li>Github Mobile</li>
-          <li>Market Place</li>
+          <li>GitHub Mobile</li>
+          <li>Marketplace</li>
+        </ul>
       </nav>
-      </div>
- <div class="footer_div_one">
-      <nav  class="footer_nav_one">
-          <li>Supports</li>
+
+      <nav class="footer_div_one" aria-label="Support links">
+        <ul class="footer_nav_one">
+          <li>Support</li>
           <li>Docs</li>
           <li>Professional Services</li>
-          <li>Premium Support </li>
-          <li>Status </li>
+          <li>Premium Support</li>
+          <li>Status</li>
           <li>Skills</li>
-          <li>Contact Github</li>
+          <li>Contact GitHub</li>
+        </ul>
       </nav>
-      </div>
-      <section class="footer_div_one">
-      <nav  class="footer_nav_one">
+
+      <nav class="footer_div_one" aria-label="Company links">
+        <ul class="footer_nav_one">
           <li>Company</li>
           <li>About</li>
-          <li>Why GitHUb</li>
-          <li>Customer Servive </li>
-          <li>Blog </li>
+          <li>Why GitHub</li>
+          <li>Customer Service</li>
+          <li>Blog</li>
           <li>Newsroom</li>
-          <li>Career </li>
+          <li>Careers</li>
+        </ul>
       </nav>
-      </div>
-    </footer>
-
-   </div>
- 
-</div>
-  
-  
+    </div>
+  </footer>
 </body>
+</html>

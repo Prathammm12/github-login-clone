@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign in Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body id="login_background">
+  <main>
+    <section id="center" aria-labelledby="signin-heading">
+      <h2 id="signin-heading" style="color:white;text-align:center;">Sign in</h2>
+
+      <form id="signin_form" autocomplete="on" novalidate>
+        <label for="get_email" class="sr-only">Email</label>
+        <input type="email" placeholder="Enter Email" id="get_email" required />
+
+        <label for="get_password" class="sr-only">Password</label>
+        <input type="password" placeholder="Enter Password" id="get_password" required />
+
+        <div style="text-align:center;margin-top:12px;">
+          <button type="submit" id="submit_credentials">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
